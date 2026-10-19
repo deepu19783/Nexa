@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — Nexa AI</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body class="auth-page">
+  <main class="auth-card">
+    <a class="brand auth-brand" href="index.html"><img src="assets/nexa-logo.jpg" alt="Nexa AI Logo" class="brand-mark"> Nexa AI</a>
+    <h1 class="auth-heading">Welcome back</h1>
+    <p class="auth-description">Sign in to continue your conversations.</p>
+
+    <form class="auth-form" id="loginForm">
+      <label>Email address
+        <input id="email" type="email" autocomplete="email" required>
+      </label>
+      <label>Password
+        <input id="password" type="password" autocomplete="current-password" minlength="6" required>
+      </label>
+      <button class="auth-submit" type="submit">Sign in</button>
+      <p class="auth-message" id="authMessage" aria-live="polite"></p>
+    </form>
+
+    <div class="auth-divider"><span>or</span></div>
+    <button class="google-submit" id="googleSignIn" type="button">
+      <span class="google-mark" aria-hidden="true">G</span> Continue with Google
+    </button>
+
+    <nav class="auth-links">
+      <a href="reset-password.html">Forgot password?</a>
+      <span>New to Nexa AI? <a href="signup.html">Create an account</a></span>
+    </nav>
+    <a class="auth-back" href="index.html">← Back to chat</a>
+  </main>
+  <script type="module" src="js/auth.js"></script>
+</body>
+</html>

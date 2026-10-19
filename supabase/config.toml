@@ -1,0 +1,5 @@
+
+project_id = "nexa-ai"
+
+[functions.chat]
+verify_jwt = true

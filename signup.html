@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create account — Nexa AI</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body class="auth-page">
+  <main class="auth-card">
+    <a class="brand auth-brand" href="index.html"><img src="assets/nexa-logo.jpg" alt="Nexa AI Logo" class="brand-mark"> Nexa AI</a>
+    <h1 class="auth-heading">Create your account</h1>
+    <p class="auth-description">Start chatting with your AI assistant.</p>
+
+    <form class="auth-form" id="signupForm">
+      <label>Email address
+        <input id="email" type="email" autocomplete="email" required>
+      </label>
+      <label>Password
+        <input id="password" type="password" autocomplete="new-password" minlength="8" required>
+      </label>
+      <label>Confirm password
+        <input id="confirmPassword" type="password" autocomplete="new-password" minlength="8" required>
+      </label>
+      <button class="auth-submit" type="submit">Create account</button>
+      <p class="auth-message" id="authMessage" aria-live="polite"></p>
+    </form>
+
+    <nav class="auth-links">
+      <span>Already have an account? <a href="login.html">Sign in</a></span>
+    </nav>
+    <a class="auth-back" href="index.html">← Back to chat</a>
+  </main>
+  <script type="module" src="js/auth.js"></script>
+</body>
+</html>
